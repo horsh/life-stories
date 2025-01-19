@@ -1,0 +1,790 @@
+title Life Stories
+author HorsH
+homepage github.com/horsh/life-stories
+flickscreen 9x7
+
+========
+OBJECTS
+========
+
+Background
+darkgreen
+
+Trap
+darkgreen
+
+WaveTrap
+darkgreen
+
+Cliff
+darkgreen
+
+Sky
+darkgreen
+
+Palm
+orange
+.0.0.
+..0..
+..0..
+.000.
+..0..
+
+Leaf
+green
+.0...
+0.0..
+0..0.
+0...0
+0...0
+
+Leaf2
+green
+...0.
+..0.0
+.0..0
+0...0
+0...0
+
+
+Sea
+Blue White
+1.1..
+.0.0.
+00000
+01010
+00000
+
+Wall
+brown
+
+Player 
+Orange Red Blue darkgray   
+.333.
+.000.
+01110
+.111.
+.2.2.
+
+PlayerRing
+PINK Red Blue Gray Yellow 
+.....
+.....
+....4
+.....
+.....
+
+Brune 
+Orange Brown Black white   
+.222.
+.002.
+02020
+.222.
+.0.0.
+
+BruneMoney
+Orange Brown Black white   
+.222.
+.002.
+02020
+.222.
+.0.0.
+
+BruneBad 
+Orange Brown Black white   
+.222.
+.200.
+02020
+.222.
+.0.0.
+
+Blonde 
+Orange Brown Red white   
+.333.
+.300.
+02020
+.222.
+.0.0.
+
+Wife 
+Orange Brown Red white   
+.333.
+.003.
+02020
+.222.
+.0.0.
+
+BlondeBad 
+Orange Brown Red white   
+.333.
+.300.
+02020
+.222.
+.0.0.
+
+
+Doctor 
+Orange Red Black white
+.313.
+.000.
+03330
+.333.
+.2.2.
+
+Psychiatrist 
+Orange Red Black white
+.313.
+.000.
+03330
+.333.
+.2.2.
+
+Friend 
+Orange Green Black brown
+.333.
+.000.
+01110
+.111.
+.2.2.
+
+Stranger 
+Orange Green Black red
+3333.
+.000.
+01110
+.111.
+.2.2.
+
+Ring 
+Yellow  Black   
+.00..
+0..0.
+0..0.
+.00..
+.....
+
+Heart 
+Red
+.0.0.
+00000
+00000
+.000.
+..0..
+
+Dead 
+Black White
+.000.
+00000
+01010
+.000.
+.000.
+
+Mother
+orange brown gray orange 
+.222.
+.002.
+02020
+.222.
+.0.0.
+
+Police
+blue yellow red
+.000.
+02220
+02120
+.020.
+..0..
+
+PoliceMan 
+Orange Blue Black
+.111.
+.000.
+01110
+.111.
+.2.2.
+
+BorderGuard 
+Orange Blue Black
+.111.
+.000.
+01110
+.111.
+.2.2.
+
+Money
+green
+
+Gangsters
+white
+.....
+..0..
+.000.
+00000
+.....
+
+
+Gun
+black
+.....
+.....
+0....
+.....
+.....
+
+Gangsters2
+white
+.....
+..0..
+.000.
+00000
+.....
+
+Drugs
+White
+
+BuildingA
+blue white black
+.000.
+00000
+02020
+02020
+00020
+
+BuildingB
+orange white black yellow
+.000.
+00000
+03020
+03020
+00020
+
+Motel
+green white black
+..0..
+.000.
+00000
+01010
+00010
+
+Club
+red black blue
+..0..
+.000.
+02220
+00110
+00110
+
+
+Airport
+White
+..0..
+0..0.
+00000
+...0.
+..0..
+
+Building
+gray black orange
+00000
+01020
+00000
+01010
+00000
+
+Building2
+gray black orange
+00000
+02010
+00000
+01020
+00000
+
+BuildingDoor
+gray black
+00000
+01110
+01110
+01110
+01110
+
+BuildingPass
+gray black orange
+00000
+01020
+00000
+01010
+00000
+
+BuildingDoor2
+gray black
+00000
+01110
+01110
+01110
+01110
+
+
+Stair
+grey black
+.1.1.
+.111.
+.1.1.
+.1.1.
+.111.
+
+PoliceTrap
+darkgreen
+
+BeppoHide
+darkgreen
+
+MotherObstacle
+brown
+
+DoctorObstacle
+brown
+
+FriendObstacle
+brown
+
+fire
+red black yellow
+.....
+.....
+..0..
+0.0.0
+.111.
+
+treetrunk
+brown green
+..0..
+.00..
+1.00.
+..0.1
+..0..
+
+
+phone
+black red blue yellow green
+.0000
+.0230
+.0140
+.0420
+.0000
+
+Cat
+yellow black 
+....1
+.1..1
+01..1
+.1111
+.1..1
+
+Cat2
+yellow black 
+1....
+1..1.
+1..10
+1111.
+1..1.
+
+CatSleep
+pink black 
+.111.
+....1
+.1111
+11111
+.111.
+
+Alien 
+Green Pink Black Blue
+.000.
+.303.
+00000
+.111.
+.2.2.
+
+Plate
+lightblue
+.....
+.....
+00000
+.000.
+.....
+
+Plate2
+lightblue gray darkred brown
+.....
+..2..
+.132.
+00000
+.000.
+
+Food
+gray darkred brown
+.....
+..0..
+.110.
+.011.
+12021
+
+
+CatObstacle
+brown
+
+SilverDoor
+gray black
+.000.
+00000
+01110
+01110
+01110
+
+GoldenDoor
+yellow black
+.000.
+00000
+01110
+01110
+01110
+
+Cage
+black darkbrown
+.1.1.
+11111
+.1.1.
+11111
+.1.1.
+
+BlondeCage
+black darkbrown
+.1.1.
+11111
+.1.1.
+11111
+.1.1.
+
+BruneCage
+black darkbrown
+.1.1.
+11111
+.1.1.
+11111
+.1.1.
+
+CatCage
+black darkbrown
+.1.1.
+11111
+.1.1.
+11111
+.1.1.
+
+PipeCage
+black darkbrown
+.1.1.
+11111
+.1.1.
+11111
+.1.1.
+
+
+Cat3
+yellow black 
+....1
+.1..1
+01..1
+.1111
+.1..1
+
+Alien2 
+Green Pink Black Blue
+.000.
+.303.
+00000
+.111.
+.2.2.
+
+AlienTrap
+darkgreen
+
+AlienTrap2
+darkgreen
+
+JailBrune 
+Orange Brown Black white   
+.222.
+.002.
+02020
+.222.
+.0.0.
+
+JailBlonde 
+Orange Brown Red white   
+.333.
+.300.
+02020
+.222.
+.0.0.
+
+BackTrap
+darkgreen
+
+PsychTrap
+darkgreen
+
+Ring1
+darkgreen
+
+Ring2
+darkgreen
+
+UfoL
+purple pink
+11111
+.1111
+..111
+...11
+....1
+
+UfoR
+purple pink
+11111
+1111.
+111..
+11...
+1....
+
+=======
+LEGEND
+=======
+
+. = Background
+# = Wall
+P = Player
+Q = PlayerRing
+G = Brune
+B = Blonde
+R = Ring1
+H = Heart
+
+S = Sea
+T = Trap
+C = Cliff
+W = WaveTrap
+/ = Sky
+i = fire
+l = wife
+
+! = Palm
+} = Leaf
+{ = Leaf2
+D = Dead
+
+M = Mother
+F = Friend
++ = Doctor
+@ = Motel
+
+X = Drugs
+- = Gun
+$ = Money
+% = Police
+Z = Gangsters
+Y = Gangsters2
+A = Airport
+& = PoliceTrap
+J = PoliceMan
+
+± = Building
+: = Building2
+` = BuildingDoor
+, = Stair
+" = Stranger
+' = Phone
+Щ = BuildingPass
+
+
+1 = BuildingA
+2 = BuildingB
+3 = Club
+
+6 = BeppoHide
+
+O = MotherObstacle
+
+Girl = Blonde or Brune
+
+~ = BorderGuard
+
+? = treetrunk
+
+E = CatSleep
+N = Alien
+_ = Plate
+U = Food
+0 = CatObstacle
+
+Cats = Cat or Cat2
+
+8 = SilverDoor
+9 = GoldenDoor
+
+7 = Cage
+5 = Cat3
+4 = AlienTrap
+Й = BlondeCage
+Ц = BruneCage
+У = CatCage
+К = JailBlonde
+Е = JailBrune
+Г = BackTrap
+З = Psychiatrist
+Ф = PsychTrap
+Ы = BruneMoney
+В = PipeCage
+А = UfoL
+П = UfoR
+
+Cages = Cage or BlondeCage or BruneCage or CatCage
+
+Ufo = UfoL or UfoR
+=======
+SOUNDS
+=======
+
+================
+COLLISIONLAYERS
+================
+
+Background
+
+Sea, Trap, Cliff, WaveTrap, Airport, PoliceTrap, Motel, Club, BeppoHide, AlienTrap, AlienTRap2, BackTrap, PsychTrap, Ring1, Ring2
+
+Player, Wall, Brune, BruneBad, Blonde, BlondeBad, Palm, Sky, Police, Gangsters, Gangsters2, Mother, Friend, Doctor, Building, Building2, BuildingDoor, PoliceMan, BuildingA, BuildingB, MotherObstacle, DoctorObstacle, FriendObstacle, Wife, BorderGuard, Stranger, Cat, Cat2, Alien, CatSleep, Plate, Plate2, Food, CatObstacle, GoldenDoor, SilverDoor, Cage, Cat3, Alien2, BlondeCage, BruneCage, CatCage, JailBlonde, JailBrune, Psychiatrist, BruneMoney, PipeCage, UfoL, UfoR
+
+Ring, PlayerRing, Heart, Dead, Money, Drugs, Gun, Fire, TreeTrunk, Leaf, Leaf2, Stair, Phone, BuildingPass, BuildingDoor2
+
+======
+RULES
+======
+
+[ MOVING Player Ring ] -> [ MOVING PLAYER  MOVING PlayerRing ]
+[ MOVING PLAYER PlayerRing ] -> [ MOVING PLAYER MOVING PlayerRing ]
+[ > PlayerRing | Wall ] -> [ PlayerRing | Wall ]
+[ PlayerRing Girl ] -> [ Heart NO Girl ] Message Marriage!
+[ > Player | Blonde ][Ring1] -> [ Player | Blonde ][Ring2] Message Yes, I love you!
+[ > Player | Blonde ][Ring2] -> [ Player | Blonde ][Ring] Message You are my only love!
+[ > Player | Blonde ][Ring] -> [ Player | Blonde ][Ring] Message Yes, I love you!
+[ > Player | Brune ][Ring1] -> [ Player | Brune ][Ring2] Message I belong ony to you!
+[ > Player | Brune ][Ring2] -> [ Player | Brune ][Ring] Message Yes, I love you!
+[ > Player | Brune ][Ring] -> [ Player | Brune ][Ring] Message Yes, I love you!
+
+
+[ Trap > Player | Cliff ] -> [ BruneBad | Cliff Player ]
+Horizontal [ BruneBad | > Player ] -> [ > BruneBad | > Player ] Message You should have chosen me!
+
+[ > player | wife ] [ fire ] -> [ player | wife ] [ fire ] Message Darling, I am gonna climb this rock and pick some berries for you!
+
+
+[ Trap > Player | WaveTrap ] -> [ BlondeBad | Wavetrap Player ]
+Horizontal [ BlondeBad | > Player ] -> [ > BlondeBad | > Player ] Message You should have chosen me!
+[ WaveTrap BlondeBad | Player ] -> [ WaveTrap  NO BlondeBad | Dead ] Message Stabbed to death.
+
+
+[ > Player | Mother ] [ MotherObstacle ] -> [ Player | Mother ] [ DoctorObstacle ] Message My dear son, I am very ill.
+[ > Player | BruneMoney ] -> [Player | BruneMoney ] Message We spend all our money to pay our bills, darling. But I love you.
+[ > Player | Doctor ] [ DoctorObstacle ] -> [ Player | Doctor ] [FriendObstacle ] Message Our surgery is very very expensive. You will have to pay in advance!
+[ > Player | Friend ] [FriendObstacle] -> [ Player | Friend ] [NO FriendObstacle] Message Dude, I can not lend you money now, sorry. Only the Gang has money. But remember, I am still your friend!
+
+
+[ > Player | Gangsters ] -> [ Player Gun | Gangsters ] Message Here, deliver these drugs to Beppo in another city. Take this gun. Solve any problems by yourself.
+
+
+[ MOVING PLAYER Gun ] -> [ MOVING PLAYER MOVING Gun ]
+[ > Gun | Wall ] -> [ Gun | Wall ]
+[ > Gun | Gangsters ] -> [ Gun | Gangsters ]
+[ > Gun | Police ] -> [ Gun | Police ]
+[ Gun | Police ] -> [ No Gun | NO Police ] Message Freeze! Put your hands on the wall! What's in your bag? -- Bang! Bang! What have I done???
+
+[ Player Motel ] -> [ Player Motel ] Message I took a rest in the Motel
+
+[ Player Club ] [ BeppoHide ] -> [ Player Club ] [ Gangsters2 ] Message In this night club I figured out where to find Beppo
+
+[ > Player | Gangsters2 ] -> [ Player | Gangsters2 ] Message Police is looking for you. You can not go back. We have transfered the money to your mother. We take our gun back. You'd better hide overseas.
+
+RIGHT [ Background | | PoliceTrap Player ] -> [ Background PoliceMan | | Player]
+
+[ PoliceMan ] [ Moving Player ] -> [ MOVING Policeman ] [ MOVING Player ]
+[ LEFT PoliceMan ] -> [ PoliceMan ]
+
+[ Background | > Player Airport ] -> [ Wall | > Player Airport] Message You take a flight to  southern islands.
+
+[ > Player | BorderGuard ] -> [ Player | NO BorderGuard ] Message Our coast guard has found you in the waves. Welcome to our country. We will interrogate you!
+
+[ > Player | BuildingDoor ] -> [ Player | BuildingDoor ] Message I don't want to be interrogated.
+
+
+[ > Player | Stranger ] -> [ Player | No Stranger Phone ] Message Here, use my phone to call home, pal.
+
+[ Player Phone ] [BuildingDoor] -> [ Player NO Phone ] [BuildingDoor2]  Message How dare you calling me! You've left me in those disgusting mountains with those slimy toads! I have already filed for divorce! Divorce, can you hear that???
+
+[ > Player | Cat | ] -> [ Player | Cat2 | Alien ]
+
+[ > Player | Alien ] [ Cats ] [ CatObstacle ] -> [ Player | No Alien ] [ No Cats ] [ No CatObstacle ] Message Excellent sample of Earth life. We take it with us.
+
+[ > Player | CatSleep ] -> [ Player | CatSleep ] Message Peps is sleeping
+
+[ > Player | Plate ] -> [ Player | Plate ] Message Peps' bowl is empty
+[ > Player | Food ] -> [ > Player | > Food ]
+[ > Food | Plate ] -> [ Plate2 | No Food ]
+[ > Player | Plate2 ] [ CatSleep ] -> [Player | Plate2 ] [ Cat ] Message Here, Peps, time to eat.
+
+[MOVING Player] [Alien2] -> [Moving Player] [Moving Alien2]
+[> Player|BlondeCage][AlienTrap] -> [Player | BlondeCage][AlienTrap2] Message The alien often comes and touches me
+[> Player|BruneCage][AlienTrap2] -> [Player | BruneCage][Alien2] Message He keeps the keys for the cages in his pocket
+[> Player|CatCage] -> [Player|CatCage] Message Miau!
+
+[> Player | Alien2][BlondeCage][BruneCage][CatCage][PipeCage] -> [Player|No Alien2][No BlondeCage][No BruneCage][No CatCage][No PipeCage] Message He's gone. But I've got the keys.
+
+[> Player | JailBrune] -> [Player | JailBrune] Message You are so tall, my saviour. Run to the duct -- the alien has planted some eplosives around!
+
+[> Player | JailBlonde] -> [Player | JailBlonde] Message Oh! I've been saved by such a gentle man! But quick! Everything is going to blow up! To the duct!
+
+RIGHT [ BackTrap > Player |] -> [Wall | Player] Message Several months later
+
+[> Player | Psychiatrist ] [PsychTrap] -> [ Player | No Psychiatrist ] [ Cage ] Message So you insist that aliens have stolen your cat and that you have crossed the ocean without a boat? I think you need some rest.
+
+[> Player | Ufo ] -> [Player | Ufo] Message What is it? Some kind of UFO?
+
+==============
+WINCONDITIONS
+==============
+
+
+=======
+LEVELS
+=======
+
+
+К.7.Е75.7/////////}//////?////.....#
+ЙЙ7ЦЦ7УУ7//..TC.//?}///{{?}.,/.....#
+........#//.###.//?///{{:±±±,/."...#
+......#В#/..###.////?{?}±±±:,/.....#
+......#.#..####.///{?}?/:±:±,/.....#
+......#.#.#####.////?/?/±:±:,/.....#
+4.....#.#..li##SSS..?..~`ЩЩЩ,......#
+,А####П.##.################Ф########
+,.А##П#.##B.....R#......Ы.#.........
+,..АП.#.##.......#.F......#.........
+,.....#.##.......#....M...#....З....
+......#.##.......#........#.........
+......#.Г.......G.......+.#.........
+......###################O##########
+#0#################......../////////
+.........#.........%......./////{/}/
+......E..#1.12.@.##.......Z////{/!/}
+....P....#2.11.@.##########//////!//
+.......U.#1.23.@.#..&.....#//////!//
+._.......#6.........&.....A.TW...!..
+.........#########..&.....####SSS##S
