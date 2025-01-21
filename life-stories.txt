@@ -315,6 +315,14 @@ gray black orange
 01010
 00000
 
+AsylumPath
+gray black orange
+00000
+01020
+00000
+01010
+00000
+
 BuildingDoor2
 gray black
 00000
@@ -555,6 +563,14 @@ purple pink
 11...
 1....
 
+PsychWalls
+purple pink green red blue white
+01234
+35142
+04152
+54104
+20142
+
 =======
 LEGEND
 =======
@@ -645,6 +661,8 @@ Cats = Cat or Cat2
 В = PipeCage
 А = UfoL
 П = UfoR
+Р = AsylumPath
+О = PsychWalls
 
 Cages = Cage or BlondeCage or BruneCage or CatCage
 
@@ -661,7 +679,7 @@ Background
 
 Sea, Trap, Cliff, WaveTrap, Airport, PoliceTrap, Motel, Club, BeppoHide, AlienTrap, AlienTRap2, BackTrap, PsychTrap, Ring1, Ring2
 
-Player, Wall, Brune, BruneBad, Blonde, BlondeBad, Palm, Sky, Police, Gangsters, Gangsters2, Mother, Friend, Doctor, Building, Building2, BuildingDoor, PoliceMan, BuildingA, BuildingB, MotherObstacle, DoctorObstacle, FriendObstacle, Wife, BorderGuard, Stranger, Cat, Cat2, Alien, CatSleep, Plate, Plate2, Food, CatObstacle, GoldenDoor, SilverDoor, Cage, Cat3, Alien2, BlondeCage, BruneCage, CatCage, JailBlonde, JailBrune, Psychiatrist, BruneMoney, PipeCage, UfoL, UfoR
+Player, Wall, Brune, BruneBad, Blonde, BlondeBad, Palm, Sky, Police, Gangsters, Gangsters2, Mother, Friend, Doctor, Building, Building2, BuildingDoor, PoliceMan, BuildingA, BuildingB, MotherObstacle, DoctorObstacle, FriendObstacle, Wife, BorderGuard, Stranger, Cat, Cat2, Alien, CatSleep, Plate, Plate2, Food, CatObstacle, GoldenDoor, SilverDoor, Cage, Cat3, Alien2, BlondeCage, BruneCage, CatCage, JailBlonde, JailBrune, Psychiatrist, BruneMoney, PipeCage, UfoL, UfoR, AsylumPath, PsychWalls
 
 Ring, PlayerRing, Heart, Dead, Money, Drugs, Gun, Fire, TreeTrunk, Leaf, Leaf2, Stair, Phone, BuildingPass, BuildingDoor2
 
@@ -689,7 +707,8 @@ Horizontal [ BruneBad | > Player ] -> [ > BruneBad | > Player ] Message You shou
 
 [ Trap > Player | WaveTrap ] -> [ BlondeBad | Wavetrap Player ]
 Horizontal [ BlondeBad | > Player ] -> [ > BlondeBad | > Player ] Message You should have chosen me!
-[ WaveTrap BlondeBad | Player ] -> [ WaveTrap  NO BlondeBad | Dead ] Message Stabbed to death.
+[ WaveTrap BlondeBad | Player ] -> [ WaveTrap  NO BlondeBad | Player Dead ] Message Stabbed to death. Press R to restart
+[> Player Dead ] -> [Player Dead] Message Stabbed to death. Press R to restart
 
 
 [ > Player | Mother ] [ MotherObstacle ] -> [ Player | Mother ] [ DoctorObstacle ] Message My dear son, I am very ill.
@@ -729,6 +748,8 @@ RIGHT [ Background | | PoliceTrap Player ] -> [ Background PoliceMan | | Player]
 
 [ Player Phone ] [BuildingDoor] -> [ Player NO Phone ] [BuildingDoor2]  Message How dare you calling me! You've left me in those disgusting mountains with those slimy toads! I have already filed for divorce! Divorce, can you hear that???
 
+[ Player BuildingDoor2 ] [ AsylumPath ] -> [ Player BuildingDoor2 ] [ BuildingPass ] Message I have no place to go...
+
 [ > Player | Cat | ] -> [ Player | Cat2 | Alien ]
 
 [ > Player | Alien ] [ Cats ] [ CatObstacle ] -> [ Player | No Alien ] [ No Cats ] [ No CatObstacle ] Message Excellent sample of Earth life. We take it with us.
@@ -747,13 +768,15 @@ RIGHT [ Background | | PoliceTrap Player ] -> [ Background PoliceMan | | Player]
 
 [> Player | Alien2][BlondeCage][BruneCage][CatCage][PipeCage] -> [Player|No Alien2][No BlondeCage][No BruneCage][No CatCage][No PipeCage] Message He's gone. But I've got the keys.
 
-[> Player | JailBrune] -> [Player | JailBrune] Message You are so tall, my saviour. Run to the duct -- the alien has planted some eplosives around!
+[> Player | JailBrune] -> [Player | JailBrune] Message You are so tall, my saviour. Run to the duct -- the alien has planted some explosives around!
 
 [> Player | JailBlonde] -> [Player | JailBlonde] Message Oh! I've been saved by such a gentle man! But quick! Everything is going to blow up! To the duct!
 
 RIGHT [ BackTrap > Player |] -> [Wall | Player] Message Several months later
 
 [> Player | Psychiatrist ] [PsychTrap] -> [ Player | No Psychiatrist ] [ Cage ] Message So you insist that aliens have stolen your cat and that you have crossed the ocean without a boat? I think you need some rest.
+
+[> Player | PsychWalls ] -> [ Player | PsychWalls ] Message You spend the rest of your days in this asylum... Press R to restart
 
 [> Player | Ufo ] -> [Player | Ufo] Message What is it? Some kind of UFO?
 
@@ -773,14 +796,14 @@ LEVELS
 ......#В#/..###.////?{?}±±±:,/.....#
 ......#.#..####.///{?}?/:±:±,/.....#
 ......#.#.#####.////?/?/±:±:,/.....#
-4.....#.#..li##SSS..?..~`ЩЩЩ,......#
+4.....#.#..li##SSS..?..~`ЩЩР,......#
 ,А####П.##.################Ф########
-,.А##П#.##B.....R#......Ы.#.........
-,..АП.#.##.......#.F......#.........
-,.....#.##.......#....M...#....З....
-......#.##.......#........#.........
-......#.Г.......G.......+.#.........
-......###################O##########
+,.А##П#.##B.....R#......Ы.#........О
+,..АП.#.##.......#.F......#........О
+,.....#.##.......#....M...#....З...О
+......#.##.......#........#........О
+......#.Г.......G.......+.#........О
+......###################O#ООООООООО
 #0#################......../////////
 .........#.........%......./////{/}/
 ......E..#1.12.@.##.......Z////{/!/}
