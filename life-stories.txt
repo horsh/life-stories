@@ -139,6 +139,9 @@ Orange Red Black white
 .333.
 .2.2.
 
+InvisiblePsychiatrist
+darkgreen
+
 Friend 
 Orange Green Black brown
 .333.
@@ -339,6 +342,33 @@ grey black
 .1.1.
 .1.1.
 .111.
+
+
+StairTrap
+grey black
+.1.1.
+.111.
+.1.1.
+.1.1.
+.111.
+
+
+StairBlock
+grey black
+.1.1.
+.111.
+.1.1.
+.1.1.
+.111.
+
+WayDown
+grey red
+01110
+01110
+11111
+01110
+00100
+
 
 PoliceTrap
 darkgreen
@@ -547,6 +577,9 @@ darkgreen
 Ring2
 darkgreen
 
+Eternity
+darkgreen
+
 UfoL
 purple pink
 11111
@@ -663,6 +696,7 @@ Cats = Cat or Cat2
 П = UfoR
 Р = AsylumPath
 О = PsychWalls
+Л = StairTrap and Stair
 
 Cages = Cage or BlondeCage or BruneCage or CatCage
 
@@ -677,11 +711,11 @@ COLLISIONLAYERS
 
 Background
 
-Sea, Trap, Cliff, WaveTrap, Airport, PoliceTrap, Motel, Club, BeppoHide, AlienTrap, AlienTRap2, BackTrap, PsychTrap, Ring1, Ring2
+Sea, Trap, Cliff, WaveTrap, Airport, PoliceTrap, Motel, Club, BeppoHide, AlienTrap, AlienTRap2, BackTrap, PsychTrap, Ring1, Ring2, StairTrap, InvisiblePsychiatrist, Eternity
 
-Player, Wall, Brune, BruneBad, Blonde, BlondeBad, Palm, Sky, Police, Gangsters, Gangsters2, Mother, Friend, Doctor, Building, Building2, BuildingDoor, PoliceMan, BuildingA, BuildingB, MotherObstacle, DoctorObstacle, FriendObstacle, Wife, BorderGuard, Stranger, Cat, Cat2, Alien, CatSleep, Plate, Plate2, Food, CatObstacle, GoldenDoor, SilverDoor, Cage, Cat3, Alien2, BlondeCage, BruneCage, CatCage, JailBlonde, JailBrune, Psychiatrist, BruneMoney, PipeCage, UfoL, UfoR, AsylumPath, PsychWalls
+Player, Wall, Brune, BruneBad, Blonde, BlondeBad, Palm, Sky, Police, Gangsters, Gangsters2, Mother, Friend, Doctor, Building, Building2, BuildingDoor, PoliceMan, BuildingA, BuildingB, MotherObstacle, DoctorObstacle, FriendObstacle, Wife, BorderGuard, Stranger, Cat, Cat2, Alien, CatSleep, Plate, Plate2, Food, CatObstacle, GoldenDoor, SilverDoor, Cage, Cat3, Alien2, BlondeCage, BruneCage, CatCage, JailBlonde, JailBrune, Psychiatrist, BruneMoney, PipeCage, UfoL, UfoR, AsylumPath, PsychWalls, StairBlock
 
-Ring, PlayerRing, Heart, Dead, Money, Drugs, Gun, Fire, TreeTrunk, Leaf, Leaf2, Stair, Phone, BuildingPass, BuildingDoor2
+Ring, PlayerRing, Heart, Dead, Money, Drugs, Gun, Fire, TreeTrunk, Leaf, Leaf2, Stair, Phone, BuildingPass, BuildingDoor2, WayDown
 
 ======
 RULES
@@ -707,8 +741,8 @@ Horizontal [ BruneBad | > Player ] -> [ > BruneBad | > Player ] Message You shou
 
 [ Trap > Player | WaveTrap ] -> [ BlondeBad | Wavetrap Player ]
 Horizontal [ BlondeBad | > Player ] -> [ > BlondeBad | > Player ] Message You should have chosen me!
-[ WaveTrap BlondeBad | Player ] -> [ WaveTrap  NO BlondeBad | Player Dead ] Message Stabbed to death. Press R to restart
-[> Player Dead ] -> [Player Dead] Message Stabbed to death. Press R to restart
+[ WaveTrap BlondeBad | Player ] -> [ WaveTrap  NO BlondeBad | Player Dead ] Message Stabbed to death.
+[> Player Dead ] -> [Player Dead] Message Stabbed to death.
 
 
 [ > Player | Mother ] [ MotherObstacle ] -> [ Player | Mother ] [ DoctorObstacle ] Message My dear son, I am very ill.
@@ -737,7 +771,7 @@ RIGHT [ Background | | PoliceTrap Player ] -> [ Background PoliceMan | | Player]
 [ PoliceMan ] [ Moving Player ] -> [ MOVING Policeman ] [ MOVING Player ]
 [ LEFT PoliceMan ] -> [ PoliceMan ]
 
-[ Background | > Player Airport ] -> [ Wall | > Player Airport] Message You take a flight to  southern islands.
+ RIGHT [ Background | > Player Airport ] -> [ Wall | > Player Airport] Message You take a flight to  southern islands.
 
 [ > Player | BorderGuard ] -> [ Player | NO BorderGuard ] Message Our coast guard has found you in the waves. Welcome to our country. We will interrogate you!
 
@@ -748,7 +782,7 @@ RIGHT [ Background | | PoliceTrap Player ] -> [ Background PoliceMan | | Player]
 
 [ Player Phone ] [BuildingDoor] -> [ Player NO Phone ] [BuildingDoor2]  Message How dare you calling me! You've left me in those disgusting mountains with those slimy toads! I have already filed for divorce! Divorce, can you hear that???
 
-[ Player BuildingDoor2 ] [ AsylumPath ] -> [ Player BuildingDoor2 ] [ BuildingPass ] Message I have no place to go...
+[ Player BuildingDoor2 ] [ AsylumPath ] [ StairTrap ] -> [ Player BuildingDoor2 ] [ WayDown ] [ StairBlock ] Message I have no place to go...
 
 [ > Player | Cat | ] -> [ Player | Cat2 | Alien ]
 
@@ -774,9 +808,12 @@ RIGHT [ Background | | PoliceTrap Player ] -> [ Background PoliceMan | | Player]
 
 RIGHT [ BackTrap > Player |] -> [Wall | Player] Message Several months later
 
-[> Player | Psychiatrist ] [PsychTrap] -> [ Player | No Psychiatrist ] [ Cage ] Message So you insist that aliens have stolen your cat and that you have crossed the ocean without a boat? I think you need some rest.
+[> Player | Psychiatrist ] [PsychTrap] -> [ Player | InvisiblePsychiatrist ] [ Cage ] Message So you insist that aliens have stolen your cat and that you have crossed the ocean without a boat? I think you need some rest.
 
-[> Player | PsychWalls ] -> [ Player | PsychWalls ] Message You spend the rest of your days in this asylum... Press R to restart
+[> Player | PsychWalls ] [ InvisiblePsychiatrist ] -> [ Player | PsychWalls ] [ Eternity] Message You spend the rest of your days in this asylum...
+
+[ Dead ] -> [ Dead Eternity ]
+[ Eternity ] -> Win
 
 [> Player | Ufo ] -> [Player | Ufo] Message What is it? Some kind of UFO?
 
@@ -796,7 +833,7 @@ LEVELS
 ......#В#/..###.////?{?}±±±:,/.....#
 ......#.#..####.///{?}?/:±:±,/.....#
 ......#.#.#####.////?/?/±:±:,/.....#
-4.....#.#..li##SSS..?..~`ЩЩР,......#
+4.....#.#..li##SSS..?..~`ЩЩРЛ......#
 ,А####П.##.################Ф########
 ,.А##П#.##B.....R#......Ы.#........О
 ,..АП.#.##.......#.F......#........О
@@ -811,3 +848,5 @@ LEVELS
 .......U.#1.23.@.#..&.....#//////!//
 ._.......#6.........&.....A.TW...!..
 .........#########..&.....####SSS##S
+
+MESSAGE You've brought your life to this sad end. Game over.
